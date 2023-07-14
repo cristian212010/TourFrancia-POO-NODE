@@ -4,6 +4,7 @@ import ciclistasRoutes from '../routes/ciclista.routes.js';
 import equiposRoutes from '../routes/equipo.routes.js';
 import etapasRoutes from '../routes/etapa.routes.js';
 import premiosRoutes from '../routes/premio.routes.js';
+import conectarDB from '../config/config.js';
 
 class Server {
 
@@ -14,8 +15,13 @@ class Server {
         this.equiposPath = '/api/equipos';
         this.etapasPath = '/api/etapas';
         this.premiosPath = '/api/premios';
+        this.conectar();
         this.middlewars();
         this.routes();
+    }
+
+    async conectar(){
+        await conectarDB();
     }
 
     middlewars(){
