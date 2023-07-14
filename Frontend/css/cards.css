@@ -1,0 +1,40 @@
+.cookie-card {
+    max-width: 250px;
+    min-width: 250px;
+    padding: 1rem !important;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 20px 20px 30px rgba(0, 0, 0, .05);
+}
+  
+.title {
+    font-weight: 600;
+    color: rgb(31 41 55);
+}
+  
+.description {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    color: rgb(75 85 99);
+}
+  
+.description a {
+    --tw-text-opacity: 1;
+    color: rgb(59 130 246);
+}
+  
+.description a:hover {
+    -webkit-text-decoration-line: underline;
+    text-decoration-line: underline;
+}
+  
+.actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1rem;
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    flex-shrink: 0;
+}
